@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+*.log
+public/
+.deploy*/
+themes/landscape
+themes/next/
+themes/icarus
+node_modules/
