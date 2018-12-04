@@ -9,7 +9,7 @@ tags:
 - Unix
 - Linux
 ---
-![](/images/linux-logo.png)
+![](/images/Liux-logo.png)
 前面已近有一篇系统级IO，那是 CSAPP 中的一章，讲了Unix IO的内容，这一次是Unix环境高级编程的一章，也是讲Unix/Linux下的文件IO，可能这里讲编程的内容多一些。
 
 我们知道通过 low level 的 open, creat 方法调用可以获得一个 file description ,它是一个整数，对应到进程文件描述符表的一项，使用这个整数就可以标识这个打开的文件。

@@ -16,12 +16,12 @@ Fedora在7月发布了版本号为26的新版本，在上周把家里的笔记�
 1. 更新/重装 virtualbox
 2. 换到Oracle的源安装VirtualBox
 3. 手动运行 `/sbin/vboxconfig`，编译kernel driver
-4. 禁用modprobe `kvm_intel` [Ref](http://www.linuxquestions.org/questions/linux-newbie-8/modprobe-vboxdrv-error-i%27m-stuck-for-3days-4175493638/)  再重装
+4. 禁用modprobe `kvm_intel` [Ref](http://www.Liuxquestions.org/questions/linux-newbie-8/modprobe-vboxdrv-error-i%27m-stuck-for-3days-4175493638/)  再重装
 5.安装旧版本内核后重装virtaulbox
 
 毫无意外以上的方法都失败了，经过一顿折腾感觉问题应该处在 secure boot上面， 想进BIOS把secure boot关掉，但是发现笔记本的BIOS密码忘记了，这条路也走不通了，不过我感觉就算关掉secure boot应该也不行。
 
-后来找到[一篇文章](https://gorka.eguileor.com/vbox-vmware-in-secureboot-linux/  )，自己对这个mod签名"骗过"操作系统，其实之前也看到了这篇文章，但是觉得有点麻烦就没怎么细看，今天研究了一下，其实也挺好处理的，就是生成一个key，然后用这个key给未签名的module签名，再通过mokutil导入key，重启系统就可以了，关键命令记录如下，具体细节可以查看原文。
+后来找到[一篇文章](https://gorka.eguileor.com/vbox-vmware-in-secureboot-Liux/  )，自己对这个mod签名"骗过"操作系统，其实之前也看到了这篇文章，但是觉得有点麻烦就没怎么细看，今天研究了一下，其实也挺好处理的，就是生成一个key，然后用这个key给未签名的module签名，再通过mokutil导入key，重启系统就可以了，关键命令记录如下，具体细节可以查看原文。
 
 ```
 sudo modprobe -v vboxdrv        # 查看mod信息，在这可以看到报错信息

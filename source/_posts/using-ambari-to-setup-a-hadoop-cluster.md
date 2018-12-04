@@ -23,7 +23,7 @@ tags:
 
 Ambari架构采用的是Server/Client的模式，主要组件：ambari-agent、ambari-server和ambari-web。ambari-agent是一个无状态的， 采集所在节点的信息并且汇总发心跳汇报给ambari-server， 处理ambari-server的执行请求。
 <!-- more -->
-需要注意的是**Ambari现在只支持64为的Linux系统，并且局限于RHEL 5/6，CentOS 5/6，OEL 5/6， SLES 11，Ubuntu 12**。这些是官方提供repository的系统，对于之外的系统需要自己编译安装。但是**对于32为的系统，不推荐去编译安装，因为我们在fedora 32bit上失败了**
+需要注意的是**Ambari现在只支持64为的Linux系统，并且局限于RHEL 5/6，CentOS 5/6，OEL 5/6， SLES 11，Ubuntu 12**。这些是官方提供repository的系统，对于之外的系统需要自己编译安装。但是**对于32为的系统，不推荐去编译安装，因为我们在Fedora 32bit上失败了**
 
 ## 安装Ambari ##
 如果像我们一样使用CentOS 6.5系统的话，安装Ambari就非常简单了，参考[这里](https://cwiki.apache.org/confluence/display/AMBARI/Install+Ambari+2.0.0+from+Public+Repositories)。添加repo后直接
@@ -42,7 +42,7 @@ sudo ambari-server setup
 1. 关闭SELinux
 2. 关闭iptables
 3. 运行用户（默认root）
-4. jdk配置，最好事先安装好最近的oracle jdk，否则Ambari会自己去下载安装jdk。选择自己配置jdk后，输入jdk的路径，默认是/usr/java/latest
+4. jdk配置，最好事先安装好最近的oracle jdk，否则Ambari会自己去下载安装jdk。选择自己配置jdk后，输入jdk的路径，默认是/usr/Java/latest
 5. 设置数据库，Ambari支持多种数据库，但是内置了postgreSQL，所以这一部分直接默认就可以了
 
 大部分都默认就可以了，最好在配置之前就关掉SELinux和iptables，只要配置一下Java路径。

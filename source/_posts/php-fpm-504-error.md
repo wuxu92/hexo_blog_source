@@ -5,7 +5,7 @@ categories:
 - server
 tags:
 - php
-- linux
+- Liux
 - http
 ---
 

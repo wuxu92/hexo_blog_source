@@ -105,7 +105,7 @@ net包还有一个LookupHost的函数，可以用来查找CNAME(canonical name)
 - 22 SSH TCP
 - X window system 6000-6007  TCP/UDP(both)
 
-更详细的端口与服务对应列表可以在linux系统的 `/etc/services` 文件中找到。Go中提供了一个 `func LookupPort(network, service string) (port int, err os.Error) ` 方法用于查询服务对应的端口。network参数是 tcp 或者 udp。
+更详细的端口与服务对应列表可以在Liux系统的 `/etc/services` 文件中找到。Go中提供了一个 `func LookupPort(network, service string) (port int, err os.Error) ` 方法用于查询服务对应的端口。network参数是 tcp 或者 udp。
 
 ```
 port, err := net.LookupPort("tcp", "ftp")

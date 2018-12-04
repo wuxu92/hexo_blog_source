@@ -6,7 +6,7 @@ categories:
 tags:
 - vim
 - yadr
-- linux
+- Liux
 ---
 
 github上面的活跃的dotfiles项目[yadr](https
@@ -49,7 +49,7 @@ yadr提供了
 
 - `,t`  文件选择器，不常- 用，键入指令后可以输入字符筛选文件
 - `,b` 打开缓存区的一个文件，比较常用
-- `Cmd-Shift-M` 跳转到方法，linux下好像没用。
+- `Cmd-Shift-M` 跳转到方法，Liux下好像没用。
 - `,jm` jump to models,可能在rails里面比较有用
 - `Alt+Shift+N` nerd tree toogle,好像没什么用
 - `Ctrl+\` 在侧边栏文件树显示当前文件，和sublime的sidebar有点像
@@ -95,7 +95,7 @@ yadr提供了
 - `,hi`  显示当前高亮的组
 - `,gt` Go Tidy， 格式化html代码
 - `:Wrap` 折叠长行，这个比较有用,特别是quickfix中的提示经常跑出去了 // 好像对quickfix部分不起作用 -_-
-- `Cmd-/` toggle comments,在linux下使用alt
+- `Cmd-/` toggle comments,在Liux下使用alt
 - `gcp` comment a paragraph
 
 ## vim相关 ##

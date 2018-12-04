@@ -36,7 +36,7 @@ openssl_free_key($privateKey); // 释放资源
 要注意，openssl key是一种资源类型，在使用完后记得释放资源。
 
 ### 使用openssl命令生成 ###
-linux的openssl包可以直接用来生成密钥对。
+Liux的openssl包可以直接用来生成密钥对。
 
 ```bash
 opensll genrsa 512 > private.key

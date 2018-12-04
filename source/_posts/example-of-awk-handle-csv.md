@@ -2,9 +2,9 @@
 date: 2015/08/19 12:34:50
 title: 一个使用awk处理csv数据示例
 categories:
-- linux
+- Liux
 tags:
-- linux
+- Liux
 - awk
 ---
 

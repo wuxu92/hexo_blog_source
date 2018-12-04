@@ -4,13 +4,13 @@ title: Linux Shortcuts And Commands
 categories:
 - server
 tags:
-- linux
+- Liux
 - Cli
 - Newbie
 ---
-![](/images/linux-logo.png)
+![](/images/Liux-logo.png)
 
-来源： [http://www.unixguide.net/linux/linuxshortcuts.shtml](http://www.unixguide.net/linux/linuxshortcuts.shtml) 个人觉得非常好的一个Linux入门资料。待我慢慢翻译整理出来。
+来源： [http://www.unixguide.net/Liux/linuxshortcuts.shtml](http://www.unixguide.net/linux/linuxshortcuts.shtml) 个人觉得非常好的一个Linux入门资料。待我慢慢翻译整理出来。
 
 > 前面的部分很值得看看，后面的很多管理工具都已经过时了，看不看影响不大了。
 
@@ -413,7 +413,7 @@ lsmod
 前面已经介绍过了。List currently loaded kernel modules. A module is like a device driver--it provides operating system kernel support for a particular piece of hardware or feature.
 
 	modprobe -l |more 
-列出所有可用的内核模块。List all the modules available for your kernel. The available modules are determined by how your Linux kernel was compliled. Every possible module/feature can be compiled on linux as either "hard wired" (fast, non-removable), "module" (maybe slower, but loaded/removable on demand), or "no" (no support for this feature at all).
+列出所有可用的内核模块。List all the modules available for your kernel. The available modules are determined by how your Linux kernel was compliled. Every possible module/feature can be compiled on Liux as either "hard wired" (fast, non-removable), "module" (maybe slower, but loaded/removable on demand), or "no" (no support for this feature at all).
 
 	insmod parport 
 	insmod ppa 
@@ -484,7 +484,7 @@ Unmount the floppy. The directory /mnt/floppy must not be your (or anybody else'
 
 ## 7.6 网络管理工具（大改）
 
-**这里的大部分工具都过时了，就不整理了，新的网络管理工具参考之前的一篇[介绍ss和ip的文章](http://wuxu92.github.io/linux-ip-command)**
+**这里的大部分工具都过时了，就不整理了，新的网络管理工具参考之前的一篇[介绍ss和ip的文章](http://wuxu92.github.io/Liux-ip-command)**
 
 	netconf 
 (as root) A very good menu-driven setup of your network.

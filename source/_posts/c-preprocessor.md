@@ -159,7 +159,7 @@ C语言程序的跨平台编译通常借用 `#define` 定义的一些宏来确�
 
 ```
 #ifdef LINUX
-	#include "linux.h"
+	#include "Liux.h"
 	#define VERSOIN 1.0
 #else
 	#include "windows.h"

@@ -6,20 +6,20 @@ categories:
 tags:
 - vim
 - tool
-- linux
+- Liux
 ---
 
 一些vim插件需要提供Lua支持，特别是常见的补全插件，前段时间安装的[yadr](https
 
 ## 下载源码 ##
-首先，编译安装嘛，先下载源码， 可是呢这两sourceforge挂掉了，vim是托管在sf上的，导致下载页面也不能访问了，甚至vim的官网 www.vim.org 也不能访问了，幸好vim在github上有一个备份  [https://github.com/vim/vim](https://github.com/vim/vim "https://github.com/vim/vim") 或者直接访问vim.org的ftp站： [ftp://ftp.vim.org/pub/vim/unix/](ftp://ftp.vim.org/pub/vim/unix/ "ftp://ftp.vim.org/pub/vim/unix/")
+首先，编译安装嘛，先下载源码， 可是呢这两sourceforge挂掉了，vim是托管在sf上的，导致下载页面也不能访问了，甚至vim的官网 www.vim.org 也不能访问了，幸好vim在github上有一个备份  [https://github.com/vim/vim](https://github.com/vim/vim "https://github.com/vim/vim") 或者直接访问vim.org的ftp站： [ftp://ftp.vim.org/pub/vim/Unix/](ftp://ftp.vim.org/pub/vim/unix/ "ftp://ftp.vim.org/pub/vim/unix/")
 
 ```
 // 使用下面之一的方法下载源码
 // git下载的话体积会大一些，好处是以后可以方便地更新
 git clone git@github.com:vim/vim.git
-wget -O ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2
-wget ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2
+wget -O ftp://ftp.vim.org/pub/vim/Unix/vim-7.4.tar.bz2
+wget ftp://ftp.vim.org/pub/vim/Unix/vim-7.4.tar.bz2
 
 tar xjvf vim-7.4.tar.bz2
 cd vim74

@@ -6,7 +6,7 @@ categories:
 tags:
 - nginx
 - openresty
-- linux
+- Liux
 - web-server
 ---
 openresty是章亦春（agentzh）维护的项目，早期由淘宝网赞助，后来作者加入cloudflare公司后，也就由该公司支持了。这是一个扩展nginx的项目，在nginx的基础上添加很多作者开发的模块。该项目目前有很多公司在使用。
@@ -184,7 +184,7 @@ sudo cp nginx /etc/init.d/nginx
 ```
 
 ###对于centos 7
-centos7不能使用上面的启动脚本，需要使用systemctl使用的脚本，也就是fedora的脚本（如下，在上面的链接也能找到），编辑后（注意删掉注释），复制到目录 `/usr/lib/systemd/system/nginx.service`
+centos7不能使用上面的启动脚本，需要使用systemctl使用的脚本，也就是Fedora的脚本（如下，在上面的链接也能找到），编辑后（注意删掉注释），复制到目录 `/usr/lib/systemd/system/nginx.service`
 
 ```
 [Unit]
@@ -210,7 +210,7 @@ WantedBy=multi-user.target
 ```
 vim nginx
 # ff ~ fileformat
-:set ff=unix
+:set ff=Unix
 :wq
 ```
 

@@ -2,13 +2,13 @@
 date: 2015/08/21 12:34:50
 title: 使用sed处理文本
 categories:
-- linux
+- Liux
 tags:
-- linux
+- Liux
 - sed
 ---
 
-linux的文本处理工具除了awk之外，还有一个利器，那就是sed。sed用于文本的替换，也是以行为单位，使用正则表达式进行匹配。
+Liux的文本处理工具除了awk之外，还有一个利器，那就是sed。sed用于文本的替换，也是以行为单位，使用正则表达式进行匹配。
 
 参考： [http://coolshell.cn/articles/9104.html](http://coolshell.cn/articles/9104.html "http://coolshell.cn/articles/9104.html")
 

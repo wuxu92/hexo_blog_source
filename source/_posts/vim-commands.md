@@ -2,7 +2,7 @@
 date: 2015/07/18 12:34:50
 title: vim 常用的命令模式
 categories:
-- linux
+- Liux
 tags:
 - vim
 - tool

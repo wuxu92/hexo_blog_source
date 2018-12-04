@@ -2,13 +2,13 @@
 title: fstab自动挂载ntfs分区并设置权限
 date: 2017-01-14 10:09:36
 categories:
-- linux
+- Liux
 tags:
-- linux
-- fedora
+- Liux
+- Fedora
 ---
 
-由于是Windows和fedora的双系统，在fedora下需要挂载Windows下的几个分区，如果每次手动挂载实在太麻烦，可以在fstab里面配置自动分区信息，这样可以在开机的时候自动挂载这些分区了。
+由于是Windows和Fedora的双系统，在fedora下需要挂载Windows下的几个分区，如果每次手动挂载实在太麻烦，可以在fstab里面配置自动分区信息，这样可以在开机的时候自动挂载这些分区了。
 
 最开始的时候，使用下面的几行配置：
 

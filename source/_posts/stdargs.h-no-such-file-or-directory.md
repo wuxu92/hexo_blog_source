@@ -5,7 +5,7 @@ categories:
 - programming
 tags:
 - C
-- linux
+- Liux
 - gcc
 ---
 
@@ -37,12 +37,12 @@ double sum(int lim, ...) {
 
 错误如下：`fatal error: stdarg.h: No such file or directory`，头文件不存在，很奇怪，去找了一下 /usr/include 目录确实没有这个文件，<del>用find查找竟然也没发现这个文件，难道系统没有这个文件？不可能的啊。</del>(是find 的时候打错名字了。。。真是见鬼，闹腾到今天才发现）
 
-实际上系统是有这个文件的，不过不在 include 目录下，在 `/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/` 这个目录下是有这个文件的。这是我的CentOS下的路径，可能其他发行版的路径名略有不同。
+实际上系统是有这个文件的，不过不在 include 目录下，在 `/usr/lib/gcc/x86_64-redhat-Liux/4.8.2/include/` 这个目录下是有这个文件的。这是我的CentOS下的路径，可能其他发行版的路径名略有不同。
 
 为了让gcc找到这个头文件，我们可以拷贝一份到 `/usr/include` 下，但是更好的方法是做一个软连接：
 
 ```
-sudo ln -s /usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdargs.h /usr/include/stdargs.h
+sudo ln -s /usr/lib/gcc/x86_64-redhat-Liux/4.8.2/include/stdargs.h /usr/include/stdargs.h
 ```
 在编译就没问题了。
 

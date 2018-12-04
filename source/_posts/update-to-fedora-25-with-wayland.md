@@ -4,15 +4,15 @@ date: 2016-12-29 20:31:13
 catgories:
 - server
 tags:
-- linux
-- fedora
+- Liux
+- Fedora
 ---
 
-毕业答辩完之后，时间也比较多了，前几天把很久没用的fedora upgrade到了 25。 Fedora 25是第一个默认用wayland替代了X的发行版，这个改动还是很大的，也是比较有风险的。
+毕业答辩完之后，时间也比较多了，前几天把很久没用的Fedora upgrade到了 25。 Fedora 25是第一个默认用wayland替代了X的发行版，这个改动还是很大的，也是比较有风险的。
 
 在F24中wayland是一个可选的显示服务，曾经尝试过几次，那个时候的wayland还非常不好用，桌面运行gnome会卡卡的，并且很多插件和软件都用不了。这次升级后的wayland可用性已经得到极大提升，虽然还有一些小问题，但是日常使用已经没有问题了。
 
-Fedora官方给出了方便的[升级方法](https://fedoraproject.org/wiki/DNF_system_upgrade)，推荐使用 dnf plugin 方式在线升级，核心方法就4条命令：
+Fedora官方给出了方便的[升级方法](https://Fedoraproject.org/wiki/DNF_system_upgrade)，推荐使用 dnf plugin 方式在线升级，核心方法就4条命令：
 
 ```
 sudo dnf upgrade --refresh
@@ -33,5 +33,5 @@ sudo dnf system-upgrade reboot
 不知道是不是更新到了wayland的错觉，整体感觉更流畅了，到现在也没有崩溃的情况，值得更新到Fedora 25。
 
 随手截个图看下效果：
-![fedora screensnap](/images/movie/fedora-25.jpg)
+![Fedora screensnap](/images/movie/fedora-25.jpg)
 

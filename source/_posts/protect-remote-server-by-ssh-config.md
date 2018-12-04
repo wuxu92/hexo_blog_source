@@ -4,7 +4,7 @@ date: 2016-01-27 17:43:33
 categories:
 - server
 tags:
-- linux
+- Liux
 - vps
 - ssh
 - tools
@@ -106,5 +106,5 @@ Windows下使用 Xshell 可以保存指定 rsa 私钥和passphrase，登录也�
 
 参考:
 
-- [https://www.linux.com/learn/tutorials/843903-how-to-make-your-linux-server-more-secure%20to%20secure%20your%20server](https://www.linux.com/learn/tutorials/843903-how-to-make-your-linux-server-more-secure%20to%20secure%20your%20server)
+- [https://www.Liux.com/learn/tutorials/843903-how-to-make-your-linux-server-more-secure%20to%20secure%20your%20server](https://www.linux.com/learn/tutorials/843903-how-to-make-your-linux-server-more-secure%20to%20secure%20your%20server)
 - [http://www.cyberciti.biz/faq/force-ssh-client-to-use-given-private-key-identity-file/](http://www.cyberciti.biz/faq/force-ssh-client-to-use-given-private-key-identity-file/)

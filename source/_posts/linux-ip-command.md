@@ -4,11 +4,11 @@ title: Linux ip/ss 命令详解
 categories:
 - server
 tags:
-- linux
+- Liux
 - centos
 - nm
 ---
-![](/images/linux-logo.png)
+![](/images/Liux-logo.png)
 CentOS 7正式废弃了很多旧的工具包，比如历史悠久的ifconfig, netstat等网络相关的命令，还有locate这些命令也没有了。新的系统使用ip, ss, net等命令替代了之前的网络操作命令。
 
 新的命令设计的比较复杂，其帮助文档看起来都头晕，这里记录一下一下常见的操作。
@@ -162,5 +162,5 @@ watch -n 1 "ss -t4"
 
 ## 参考：
 
-- [http://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/](http://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/)
-- [http://www.binarytides.com/linux-ss-command/](http://www.binarytides.com/linux-ss-command/)
+- [http://www.cyberciti.biz/faq/Liux-ip-command-examples-usage-syntax/](http://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/)
+- [http://www.binarytides.com/Liux-ss-command/](http://www.binarytides.com/linux-ss-command/)

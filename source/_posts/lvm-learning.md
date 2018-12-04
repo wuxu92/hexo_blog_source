@@ -5,8 +5,8 @@ categories:
 - server
 tags:
 - centos
-- linux
-- lvm
+- Liux
+- Lvm
 ---
 LVM 是一种可用在Linux内核的逻辑分卷管理器；可用于管理磁盘驱动器或其他类似的大容量存储设备。
 
@@ -73,7 +73,7 @@ LVM方式
 
 ```bash
 # lvmdiskscan  // 扫描磁盘，列出设备
-# pvcreate DEVICE 在列出的设备上创建物理卷 这里的设备一般是磁盘，比如/dev/sda2, 现在linux的一般使用sda1挂在/boot分区，把sda2挂载为lvm
+# pvcreate DEVICE 在列出的设备上创建物理卷 这里的设备一般是磁盘，比如/dev/sda2, 现在Liux的一般使用sda1挂在/boot分区，把sda2挂载为lvm
 # pvdisplay  查看建立的物理卷的信息
 ```
 
@@ -121,7 +121,7 @@ mount /dev/mapper/VolGroup00-home /home
 
 ### 移动物理区域 ###
 在移动空间的物理区域到卷尾部之前，需要运行 `# pvdisplay -v -m`查看物理设备的分段。这条命令会列出物理卷上的各个逻辑卷的分布。
-具体的移动物理分区命令比较麻烦，请参考 [https://wiki.archlinux.org/index.php/LVM](https://wiki.archlinux.org/index.php/LVM "archlinux wiki") 中相关章节
+具体的移动物理分区命令比较麻烦，请参考 [https://wiki.archLiux.org/index.php/LVM](https://wiki.archlinux.org/index.php/LVM "archlinux wiki") 中相关章节
 
 ### 调整逻辑分区大小 ###
 可以使用lvresize命令对逻辑分区的大小进行调整，一般来说，扩大逻辑分区可以在线上完成，而缩小逻辑分区哦到小需要先卸载分区以避免数据丢失。
@@ -164,12 +164,12 @@ sr0              11:0    1  1024M  0 rom
 ## 快照 ##
 LVM可以给系统创建一个快照，由于使用了写入时复制(copy-on-write) 策略，相比传统的备份更有效率。 初始的快照只有关联到实际数据的inode的实体链接(hark-link)而已。只要实际的数据没有改变，快照就只会包含指向数据的inode的指针，而非数据本身。一旦你更改了快照对应的文件或目录，LVM就会自动拷贝相应的数据，包括快照所对应的旧数据的拷贝和你当前系统所对应的新数据的拷贝。这样的话，只要你修改的数据（包括原始的和快照的）不超过2G，你就可以只使用2G的空间对一个有35G数据的系统创建快照。
 
-具体使用，没有经验，还是参考： [https://wiki.archlinux.org/index.php/LVM_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)](https://wiki.archlinux.org/index.php/LVM_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)) 吧
+具体使用，没有经验，还是参考： [https://wiki.archLiux.org/index.php/LVM_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)](https://wiki.archlinux.org/index.php/LVM_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)) 吧
 
 done
 
 参考:
 
-- [https://wiki.archlinux.org/index.php/LVM](https://wiki.archlinux.org/index.php/LVM"LVM在archlinux wiki上的页面")
+- [https://wiki.archLiux.org/index.php/LVM](https://wiki.archlinux.org/index.php/LVM"LVM在archlinux wiki上的页面")
 - [http://icsmile.com/2013/04/22/lvm_1.html](http://icsmile.com/2013/04/22/lvm_1.html)
 - https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)

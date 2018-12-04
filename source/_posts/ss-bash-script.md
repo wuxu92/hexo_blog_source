@@ -2,9 +2,9 @@
 title: Shadowsocks的客户端脚本
 date: 2016-10-10 21:55:47
 categories:
-- linux
+- Liux
 tags:
-- linux
+- Liux
 - zsh
 ---
 之前一直使用shadowsocks-qt5的ss客户端，但是最近不知道怎么回事，一启动它过几秒就崩溃,重装也没有效果，只好写两个脚本控制了。

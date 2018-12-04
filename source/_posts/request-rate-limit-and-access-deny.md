@@ -5,7 +5,7 @@ categories:
 - server
 tags:
 - nginx
-- linux
+- Liux
 - web server
 - lighttpd
 ---

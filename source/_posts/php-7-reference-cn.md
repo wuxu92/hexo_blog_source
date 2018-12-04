@@ -1133,7 +1133,7 @@ Fatal error: Redefinition of parameter $version in /redefinition-of-parameters.p
 - sapi/tux
 - sapi/webjames
 - ext/mssql
-- ext/mysql
+- ext/MySQL
 - ext/sybase_ct
 - ext/ereg
 
@@ -1181,7 +1181,7 @@ RFC: [Remove hex support in numeric strings](https://wiki.php.net/rfc/remove_hex
 
 所有标记为过期的功能都被移除了，最值得一提的包括：
 
- - 原生mysql扩展(ext/mysql)
+ - 原生mysql扩展(ext/MySQL)
  - ereg扩展 (ext/ereg)
  - Assigning `new` by reference
  - 在不合适的`$this`上下文调用一个非静态方法。 (例如从类外调用 `Foo::bar()`，而 `bar()` 不是一个静态方法)

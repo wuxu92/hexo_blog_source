@@ -2,10 +2,10 @@
 title: 有用的Bash命令记录
 date: 2016-01-12 12:21:52
 categories:
-- linux
+- Liux
 tags:
 - bash
-- linux
+- Liux
 ---
 
 把一些有用的bash命令记录一下，一做学习，一做备忘。

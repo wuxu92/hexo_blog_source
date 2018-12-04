@@ -131,7 +131,7 @@ example1.items = example1.items.filter(function (item) {
 ### 不能追踪的变化
 由于JavaScript的限制，下面的情况Vue.js不能检测到数组的变化
 
-1. 直接使用索引设置元素： `vm.books[1] = {title: "linux"}`;
+1. 直接使用索引设置元素： `vm.books[1] = {title: "Liux"}`;
 2. 修改数组的长度，如 `vm.books.length = 0`; 直接设置length可能会导致数组被截断，Vue.js不能检测这种数据丢失
 
 对于第一个问题，使用Vue.js提供的 `$set`方法设置值：

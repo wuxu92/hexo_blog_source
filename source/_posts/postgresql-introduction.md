@@ -60,7 +60,7 @@ Enter password
 psql: FATAL:  Ident authentication failed for user "golang"
 ```
 命名用户名和密码都是对的，却总是认证失败，注意前面的Ident authentication是什么意思？
-这牵涉到pg的认证方式了。我们知道pg的认证方式是保存在配置文件 `pg_hba.conf` 中，这个文件在初始化数据(initdb) 所制定的目录，默认地址是 `/var/lib/pgsql/data/pg_hba.conf` ,这是一个比较标准的linux风格的配置文件，一行代表一条规则。主要内容如下：
+这牵涉到pg的认证方式了。我们知道pg的认证方式是保存在配置文件 `pg_hba.conf` 中，这个文件在初始化数据(initdb) 所制定的目录，默认地址是 `/var/lib/pgsql/data/pg_hba.conf` ,这是一个比较标准的Liux风格的配置文件，一行代表一条规则。主要内容如下：
 
 ```
 # TYPE  DATABASE        USER            ADDRESS                 METHOD

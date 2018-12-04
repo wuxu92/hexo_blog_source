@@ -5,7 +5,7 @@ categories:
 - server
 tags:
 - tools
-- linux
+- Liux
 - centos
 - ss
 ---
@@ -16,7 +16,7 @@ shadowsocks是非常方便的“出墙”方式，也是现在最流行最被推
 
 如果还没有申请，建议在申请的时候看有没有JP或者HK或者SG的机房，我选的us-west的机房，速度实在有点慢。
 
-免费的EC2实例只能选linux，我选的是Redhat7的系统，因为一直用的CentOS和Fedora，比较熟悉。ss-server有很多种安装方式，有libev的包，有用python,nodejs,golang等多种语言实现。考虑到免费的实例配置很低，推荐使用libev的包。
+免费的EC2实例只能选Liux，我选的是Redhat7的系统，因为一直用的CentOS和Fedora，比较熟悉。ss-server有很多种安装方式，有libev的包，有用python,nodejs,golang等多种语言实现。考虑到免费的实例配置很低，推荐使用libev的包。
 <!-- more -->
 安装ss-server有两种方式，一种使用社区的自动安装脚本，一种是编译安装，下面分别介绍。
 

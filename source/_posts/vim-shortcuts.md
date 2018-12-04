@@ -2,7 +2,7 @@
 date: 2015/07/19 12:34:50
 title: vim 常用的快捷键
 categories:
-- linux
+- Liux
 tags:
 - vim
 - shortcuts

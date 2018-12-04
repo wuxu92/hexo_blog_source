@@ -12,7 +12,7 @@ tags:
 
 Go官方并不提供数据库驱动，而只是为开发数据库驱动定义了一些标准接口。我们要使用mysql数据库得使用第三方维护的mysql驱动。Go中支持MySQL的驱动目前比较多，有如下几种，有些是支持database/sql标准，而有些是采用了自己的实现接口,常用的有如下几种:
 
-[https://github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) 支持database/sql，全部采用go写。
+[https://github.com/go-sql-driver/MySQL](https://github.com/go-sql-driver/mysql) 支持database/sql，全部采用go写。
 [https://github.com/ziutek/mymysql](https://github.com/ziutek/mymysql) 支持database/sql，也支持自定义的接口，全部采用go写。
 [https://github.com/Philio/GoMySQL](https://github.com/Philio/GoMySQL) 不支持database/sql，自定义接口，全部采用go写。
 也推荐使用第一个，主要理由：
@@ -45,7 +45,7 @@ CREATE TABLE `userdetail` (
 
 ```
 ssh wuxu@10.4.16.95
-mysql -uroot -p
+MySQL -uroot -p
 // enter root password
 create user golang@'%' identified by 'golangMysql';
 grant privileges on *.golang to golang@'%';
@@ -55,20 +55,20 @@ flush privileges;
 这样就可以用golang登录新建的数据库了
 
 ## Golang操作mysql ##
-先get数据库驱动,在命令行运行`go get github.com/go-sql-driver/mysql`,会自动使用git从github下载mysql驱动工程到`$GOPATH/src/`。
+先get数据库驱动,在命令行运行`go get github.com/go-sql-driver/MySQL`,会自动使用git从github下载mysql驱动工程到`$GOPATH/src/`。
 
 基本的插入，更新，删除，查找方法如下：
 
 ```goalng
 import (
-	_ "github.com/go-sql-driver/mysql"
+	_ "github.com/go-sql-driver/MySQL"
 	"database/sql"
 	"fmt"
 )
 
 func main() {
 	// mysql是一个注册过的数据库驱动了,在驱动的init函数中注册
-	db, err := sql.Open("mysql", "golang:golangMysql@tcp(10.4.16.95:3306)/golang?charset=utf8")
+	db, err := sql.Open("MySQL", "golang:golangMysql@tcp(10.4.16.95:3306)/golang?charset=utf8")
 	CheckErr(err)
 	fmt.Println("connected")
 	
@@ -121,7 +121,7 @@ func CheckErr(e error) {
 
 注意数据连接的dsn(data source name)和php或者其他语言的比较不一样。我们使用的是 `user:password@protocol(host:port)/dbname?charset=utf8` 的形式。驱动本身支持更多形式的dsn：
 
-- user@unix(/path/to/socket)/dbname?charset=utf8
+- user@Unix(/path/to/socket)/dbname?charset=utf8
 - user:password@tcp(localhost:5555)/dbname?charset=utf8
 - user:password@/dbname
 - user:password@tcp([::]:80)/dbname   // ipv6

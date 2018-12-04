@@ -48,7 +48,7 @@ int atexit(void (*func)(void));
 还记得之前介绍的函数指针吗，atexit函数的参数的类型就是一个函数指针（函数地址），其返回值和参数都是 void 。注意：exit调用这些登记了的函数的顺序与它们登记的顺序相反，同一函数若登记多次，则会**被调用多次**。
 
 一个C程序的启动和终止流程：
-![](/images/linux/time-functions.png)
+![](/images/Liux/time-functions.png)
 可以看出内核使程序执行的唯一方法是调用一个exec函数。
 
 ## 命令行参数
@@ -82,7 +82,7 @@ int unsetenv(const char *name);
 ```
 一些常用的环境变量名和它们在各个系统中的实现：
 
-![](/images/linux/env-vars.png)
+![](/images/Liux/env-vars.png)
 
 ## C程序的存储空间布局
 这一段在深入理解计算机系统中已经[详细介绍](http://wuxu92.github.io/linking-relocation-and-others/)了，这里看有需要记的再记。

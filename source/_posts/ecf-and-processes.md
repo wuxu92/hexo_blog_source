@@ -157,7 +157,7 @@ return pid;
 
 如果父进程不回收僵死进程，内核会安排init进程（PID为1的系统进程）进行回收操作。对于长时间运行的程序，总是应该由父进程进行回收操作以及时释放系统资源。
 
-父进程进行回收的函数，也是一个等待子进程执行结束的函数就是waitpid。这在 APUE（advanced programming in unix enviroment）中很早就提过这个函数，它的声明如下：
+父进程进行回收的函数，也是一个等待子进程执行结束的函数就是waitpid。这在 APUE（advanced programming in Unix enviroment）中很早就提过这个函数，它的声明如下：
 
 ```c
 #include <sys/types.h>

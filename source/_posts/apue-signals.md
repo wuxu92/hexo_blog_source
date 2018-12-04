@@ -5,9 +5,9 @@ categories:
 - programming
 - c
 tags:
-- unix
+- Unix
 - c
-- linux
+- Liux
 - programming
 - signal
 ---

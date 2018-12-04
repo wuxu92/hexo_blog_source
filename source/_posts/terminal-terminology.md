@@ -2,9 +2,9 @@
 title: 一个不错的终端工具：terminology
 date: 2017-06-23 11:59:06
 categories:
-- linux
+- Liux
 tags:
-- linux
+- Liux
 ---
 
 之前一直使用gnome自带的terminal，感觉也挺好用的，就是多开tab的时候有点丑，习惯了其实也没事，但是偶尔就是想换掉它。。更早的时候使用的 roxterm也是很好用的，但是不知道为什么从F23开始，border样式变得很奇怪，有一圈没法去掉的大边界。
@@ -24,7 +24,7 @@ tags:
 terminology还有样式看起来很舒服的分栏功能，比绝大部分终端软件的分栏看起来都舒服，但是习惯了tmux的分栏还是不推荐再使用terminal的分栏功能，太弱了，并且容易搞混。
 
 一个截图：
-![terminology screenshot](/images/linux/terminology.jpg)
+![terminology screenshot](/images/Liux/terminology.jpg)
 
 **一个致命的缺点**： 不能使用fcitx-rime输入法，不能输入中文。测试了一下，ibus和fcitx都不能输入中文，如果有中文输入的需求。。。还是暂时不要用这个了，用gnome terminal吧。
 

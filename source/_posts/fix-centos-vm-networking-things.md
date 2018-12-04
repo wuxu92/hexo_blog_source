@@ -2,10 +2,10 @@
 title: 解决一个VirtualBox虚拟机错误导致的各种问题
 date: 2016-04-13 21:07:47
 categories:
-- linux
+- Liux
 tags:
 - VirtualBox
-- linux
+- Liux
 - git
 - tool
 ---
@@ -67,6 +67,6 @@ git remote set-url origin git@new-ip:user/repo.git
 参考：
 
 - [http://www.bradleyschacht.com/virtualbox-cannot-register-the-hard-drive-because-a-hard-drive-with-uuid-already-exists/](http://www.bradleyschacht.com/virtualbox-cannot-register-the-hard-drive-because-a-hard-drive-with-uuid-already-exists/)
-- [http://www.ahlinux.com/start/base/21893.html](http://www.ahlinux.com/start/base/21893.html)
+- [http://www.ahLiux.com/start/base/21893.html](http://www.ahlinux.com/start/base/21893.html)
 - [http://www.zhukun.net/archives/5949/comment-page-1](http://www.zhukun.net/archives/5949/comment-page-1)
 - 

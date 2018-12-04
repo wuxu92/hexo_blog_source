@@ -15,7 +15,7 @@ tags:
 
 **RockMongo**：一个PHP开发的Web管理工具，看起来和phpMyAdmin很像，应该比adminMongo好用，网站： [http://www.rockmongo.com/](http://www.rockmongo.com/)
 
-**个人觉得，这些mongodb的管理工具远不如linux下的命令行客户端方便**
+**个人觉得，这些mongodb的管理工具远不如Liux下的命令行客户端方便**
 
 ## Chrome插件
 最常用的一些插件

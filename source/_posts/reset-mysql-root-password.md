@@ -4,8 +4,8 @@ title: 重置mysql的密码/无密码登录mysql
 categories:
 - db
 tags:
-- mysql
-- linux
+- MySQL
+- Liux
 ---
 经常会忘记mysql的root密码，尤其是机器一多的时候。上周五把科委的服务器迁移到centos上面，当时把mysql配置好了，也能登录了，但是今天各省测试的时候，发现mysql链接失败，登录服务器用命令行登录发现是 "Access Denied",明明记得是正确的密码，又不能登录了，估计又记错了。
 
@@ -25,7 +25,7 @@ sudo mysqld_safe --skip-grant-tables
 登录mysql, 设置密码
 
 ```
-mysql
+MySQL
 set password for 'root'@'localhost' = PASSWORD('yourPassword');
 ```
 注意设置密码需要使用PASSWORD函数处理，也就是把密码hash存储。
@@ -39,4 +39,4 @@ sudo service mysqld start
 当然，其他账号同理可以修改密码了。注意不要开启root的远程登录权限。
 done
 
-参考: [https://dev.mysql.com/doc/refman/5.0/en/resetting-permissions.html](https://dev.mysql.com/doc/refman/5.0/en/resetting-permissions.html)
+参考: [https://dev.MySQL.com/doc/refman/5.0/en/resetting-permissions.html](https://dev.mysql.com/doc/refman/5.0/en/resetting-permissions.html)

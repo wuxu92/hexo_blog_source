@@ -43,7 +43,7 @@ string self_concat(string str, int n)
 把这一行保存为mfs.def文件，放在ext文件夹下。
 
 ## 基本骨架 ##
-运行上面的ext_skel命令，就会在ext文件夹下创建一个mfs的文件夹，并声称一些代码文件和配置文件。 php扩展在linux下的配置文件是 ext/mfs/config.m4；m4有自己的语法，不过我们并不需要熟悉它，只需要简单去掉一些注释就可以了。打开配置文件config.m4；大概在16行和18行，找到`PHP_ARG_ENABLE(mfs, whether to enable mfs support` 相关的内容，这一行是用来重新生成configure文件时起作用的，取消这一行及
+运行上面的ext_skel命令，就会在ext文件夹下创建一个mfs的文件夹，并声称一些代码文件和配置文件。 php扩展在Liux下的配置文件是 ext/mfs/config.m4；m4有自己的语法，不过我们并不需要熟悉它，只需要简单去掉一些注释就可以了。打开配置文件config.m4；大概在16行和18行，找到`PHP_ARG_ENABLE(mfs, whether to enable mfs support` 相关的内容，这一行是用来重新生成configure文件时起作用的，取消这一行及
 它后面的第二行`[ --enable-myfunctions                Include myfunctions support])`，中间有一行不要取消注释。这样就可以重新生成configure文件可以使用enable-mfs来静态编译扩展。
 
 完成上面的工作后，重新生成configure文件并编译安装php。

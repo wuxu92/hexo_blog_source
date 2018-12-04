@@ -12,13 +12,13 @@ tags:
 goroutines就是可以方便的并行执行函数，本身并没有太多东西要注意的，主要的内容在于goroutine和channel结合的并发程序
 
 ## Channel ##
-channel相当于联系并发的goroutine的管道，我们常使用linux中的管道pipe做类比：
+channel相当于联系并发的goroutine的管道，我们常使用Liux中的管道pipe做类比：
 
 ```bash
 ls -l | grep .go
 ```
 上面的命令把当前目录下的文件列出，每个文件占一行，用管道把输出结果送到grep程序的标准输入流，grep把当前目录下的go源程序文件筛选出来。管道吧ls程序和grep程序连接起来，goroutine的作用也差不多，把一个goroutine的输出，可以在另外一个goroutine读出来。
-当然channel要比linux的管道功能更加强大一些，因为是可编程的，它可以传递任意规定的类型的变量，使用也很方便。
+当然channel要比Liux的管道功能更加强大一些，因为是可编程的，它可以传递任意规定的类型的变量，使用也很方便。
 
 ```golang
 msgChannel := make(chan string)

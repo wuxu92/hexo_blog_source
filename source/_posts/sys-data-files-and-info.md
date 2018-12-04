@@ -9,7 +9,7 @@ tags:
 - Linux
 - C
 ---
-![](/images/linux-logo.png)
+![](/images/Liux-logo.png)
 Unix系统的正常运作需要使用大量与系统有关的数据文件，例如口令文件 /etc/passwd 和组文件 /etc/group 就经常被多个程序使用，由于历史原因，这些文件都是ASCII文本文件，并且使用标准IO库读这些文件...但是，对于较大的系统，顺序扫描指令文件很花费时间，我们需要能够以非ASCII文本格式存储这些文件，但仍然向使用其他文件格式的应用程序提供接口。
 
 ## 口令文件
@@ -154,7 +154,7 @@ clock_gettime函数应该是包含在头文件 <time.h> 中，但是APUE书本�
 常用 CLOCK_REALTIME获得比 time() 更精确的时间（带 nanoseconds）。
 
 时间存在多种表示形式，各个时间函数之间的关系如下，这**张图超级有用**，其中方框中的是结构体，箭头上的是函数。
-![](/images/linux/time-functions.png)
+![](/images/Liux/time-functions.png)
 
 其中的几个函数声明如下：
 
@@ -200,7 +200,7 @@ strftime 和 strftime_l 的区别是后者可以通过 locale参数设定区域�
 
 format指定的格式和printf类似，不过有更多的特定字符，而且没有宽度修饰符。输出格式转换说明表如下：
 
-![](/images/linux/strftime-format.png)
+![](/images/Liux/strftime-format.png)
 
 其中大部分都比较容易理解，其中 %U, %V, %W 都与周数有关，它们之间有细微的区别， %U的周数是该年中第一个星期日的周为第一周，， %W是该年第一个星期一的周为第一周，%V则是包含1月1日的那一周包含了新一年的4天或者更多，那么这周是这年的第一周，否则认为是上一年的最后一周。
 
@@ -215,7 +215,7 @@ char *strptime(const char *restrict buf, const char *restrict format,
 ```
 format参数给出了buf参数指向的缓冲区内的字符串的格式，虽然与strftime函数的格式稍有不同，但是基本类似。
 
-![](/images/linux/strptime.png)
+![](/images/Liux/strptime.png)
 
 时间相关的函数很多都是用 TZ 环境变量的值，Linux可以用 tzselect 工具设定tz，这是一个交互性的文字界面工具。
 
@@ -223,7 +223,7 @@ format参数给出了buf参数指向的缓冲区内的字符串的格式，虽�
 
 参考：
 
-- [http://linux.die.net/man/3/clock_gettime](http://linux.die.net/man/3/clock_gettime)
+- [http://Liux.die.net/man/3/clock_gettime](http://linux.die.net/man/3/clock_gettime)
 - [http://en.cppreference.com/w/c/chrono/time_t](http://en.cppreference.com/w/c/chrono/time_t)
 - [http://stackoverflow.com/questions/471248/what-is-ultimately-a-time-t-typedef-to](http://stackoverflow.com/questions/471248/what-is-ultimately-a-time-t-typedef-to)
 - Unix 环境高级编程

@@ -41,7 +41,7 @@ future: true
 highlight:
   enable: true
   line_number: false
-  auto_detect: true
+  auto_detect: false
   tab_replace:
 
 # Category & Tag
@@ -68,9 +68,9 @@ pagination_dir: page
 # theme: icarus
 theme: next
 
-plugins:
-- hexo-generator-sitemap
-- hexo-generator-baidu-sitemap
+# plugins:
+# - hexo-generator-sitemap
+# - hexo-generator-baidu-sitemap
 
 baidusitemap:
 	path: baidusitemap.xml

@@ -14,7 +14,7 @@ PHP 7正式版终于在今天发布了，<del>虽然在官网 [php.net](php.net)
 
 官方的下载地址： [http://www.php.net/downloads.php](http://www.php.net/downloads.php)
 
-可以参考之前的文章： [http://wuxu92.github.io/compile-and-install-php7-beta1/](http://wuxu92.github.io/compile-and-install-php7-beta1/) 唯一的区别是正式版没有了 `--with-mysql`  选项，因为正式版已经没有旧的mysql函数的支持了，需要使用 mysqli 或者 PDO 替代早已不建议使用的mysql函数。
+可以参考之前的文章： [http://wuxu92.github.io/compile-and-install-php7-beta1/](http://wuxu92.github.io/compile-and-install-php7-beta1/) 唯一的区别是正式版没有了 `--with-MySQL`  选项，因为正式版已经没有旧的mysql函数的支持了，需要使用 mysqli 或者 PDO 替代早已不建议使用的mysql函数。
 
 下载链接：  [http://cn2.php.net/get/php-7.0.0.tar.gz/from/this/mirror](http://cn2.php.net/get/php-7.0.0.tar.gz/from/this/mirror)
 
@@ -53,7 +53,7 @@ sudo yum install -y gcc gcc-c++  make zlib zlib-devel pcre pcre-devel  libjpeg l
 sudo yum install -y autoconf
 ./buildconf
 ```
-configure脚本参数，使用下面的配置，编译的php基本就满足使用了（和编译beta版本一样，只是去掉了 `--with-mysql` ）：
+configure脚本参数，使用下面的配置，编译的php基本就满足使用了（和编译beta版本一样，只是去掉了 `--with-MySQL` ）：
 
 ```
 ./configure \
@@ -88,7 +88,7 @@ configure脚本参数，使用下面的配置，编译的php基本就满足使�
     --enable-gd-native-ttf \
     --enable-gd-jis-conv \
     --with-openssl \
-    --with-pdo-mysql=mysqlnd \
+    --with-pdo-MySQL=mysqlnd \
     --with-gettext=/usr \
     --with-zlib=/usr \
     --with-bz2=/usr \
